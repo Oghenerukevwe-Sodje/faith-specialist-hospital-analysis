@@ -1,3 +1,5 @@
+--Analyse the prevalence of chronic diseases and their relationship with hospital outcomes.
+
 --Most prevalent Chronic diseases that have the highest mortality and DAMA rates and are associated with longer hospital stays
 SELECT chronic_disease,
 		COUNT(*) AS total_cases,
