@@ -1,5 +1,7 @@
---CHECK FOR DUPLICATES
+--data_quality_assessment.sql
+-- Purpose: Assess data quality by checking for duplicates, missing values, inconsistencies and data integrity.
 
+--CHECK FOR DUPLICATES
 --PATIENTS 
 SELECT pt_id,
     	COUNT(*) AS patient_count
@@ -33,7 +35,7 @@ HAVING COUNT(*) > 1;
 
 --CHECKING FOR NULL/MISSING VALUES
 
-PATIENTS
+--PATIENTS
 SELECT COUNT(*) AS total_records,
     	COUNT(*) FILTER (WHERE pt_id IS NULL) AS missing_pt_id,
    		COUNT(*) FILTER (WHERE age IS NULL) AS missing_age,
@@ -46,7 +48,7 @@ FROM patients;
 --missing education: 936
 --missing marital status: 16
 
-ADMISSIONS
+--ADMISSIONS
 SELECT COUNT(*) AS total_records,
     	COUNT(*) FILTER (WHERE admission_id IS NULL) AS missing_admission_id,
     	COUNT(*) FILTER (WHERE pt_id IS NULL) AS missing_pt_id,
@@ -56,7 +58,7 @@ SELECT COUNT(*) AS total_records,
     	COUNT(*) FILTER (WHERE admission_duration IS NULL) AS missing_duration
 FROM admissions;
 
-DOCTORS
+--DOCTORS
 SELECT COUNT(*) AS total_records,
     	COUNT(*) FILTER (WHERE doctor_id IS NULL) AS missing_doctor_id,
     	COUNT(*) FILTER (WHERE doctor IS NULL) AS missing_doctor,
@@ -65,7 +67,7 @@ SELECT COUNT(*) AS total_records,
     	COUNT(*) FILTER (WHERE specialization IS NULL) AS missing_specialization
 FROM doctors;
 
-RISK FACTORS
+--RISK FACTORS
 SELECT COUNT(*) AS total_records,
     	COUNT(*) FILTER (WHERE pt_id IS NULL) AS missing_pt_id,
     	COUNT(*) FILTER (WHERE alcohol_hx IS NULL) AS missing_alcohol,
