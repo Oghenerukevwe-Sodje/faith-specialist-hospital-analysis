@@ -1,3 +1,5 @@
+--Analyse doctor workload and hospital outcomes across medical specialties.
+
 --Doctor workload
 SELECT d.doctor,
     	d.doctor_id,
