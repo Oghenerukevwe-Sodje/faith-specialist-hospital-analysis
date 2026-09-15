@@ -1,3 +1,6 @@
+--data_cleaning
+-- Purpose: Clean and standardise the data to prepare it for analysis.
+
 --CREATING A CLEAN TABLE
 CREATE TABLE patient_table(
 		pt_id INTEGER PRIMARY KEY,
