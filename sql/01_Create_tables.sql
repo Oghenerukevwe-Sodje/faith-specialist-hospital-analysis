@@ -1,3 +1,9 @@
+-- =====================================================
+-- Faith Specialist Hospital Healthcare Analytics Project
+-- File: 01_create_tables.sql
+-- Purpose: Create the Patient, Risk Factors, Doctors,
+--          and Admissions tables used in the analysis.
+-- =====================================================
 --Create PATIENT table
 CREATE TABLE patients(
 		pt_id INTEGER PRIMARY KEY,
@@ -11,7 +17,7 @@ CREATE TABLE patients(
 );
 
 SELECT*
-FROM patients
+FROM patients;
 
 --Create risk factors table
 CREATE TABLE risk_factors(
@@ -22,7 +28,7 @@ CREATE TABLE risk_factors(
 );
 
 SELECT*
-FROM risk_factors
+FROM risk_factors;
 
 ALTER TABLE risk_factors
 RENAME COLUMN NSAID_Use TO "NSAID_use";
@@ -38,7 +44,7 @@ CREATE TABLE doctors(
 );
 
 SELECT*
-FROM doctors
+FROM doctors;
 
 --Creating admissions table
 CREATE TABLE admissions(
@@ -63,10 +69,10 @@ CREATE TABLE admissions(
 
 ALTER TABLE admissions
 ALTER COLUMN no_of_sessions TYPE INTEGER
-USING no_of_sessions::INTEGER
+USING no_of_sessions::INTEGER;
 
 SELECT*
-FROM admissions
+FROM admissions;
 
 ALTER TABLE admissions
 RENAME COLUMN dama TO "DAMA";
