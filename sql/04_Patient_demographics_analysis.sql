@@ -1,3 +1,5 @@
+--Analyse patient demographics in relation to hospital outcomes.
+
 -- Hospital outcome by age
 SELECT
     CASE
