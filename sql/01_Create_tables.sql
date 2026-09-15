@@ -1,8 +1,7 @@
 -- =====================================================
 -- Faith Specialist Hospital Healthcare Analytics Project
--- File: 01_create_tables.sql
--- Purpose: Create the Patient, Risk Factors, Doctors,
---          and Admissions tables used in the analysis.
+-- Create_tables
+-- Purpose: Create the Patient, Risk Factors, Doctors, and Admissions tables used in the analysis.
 -- =====================================================
 --Create PATIENT table
 CREATE TABLE patients(
