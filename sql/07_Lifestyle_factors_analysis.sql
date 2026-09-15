@@ -1,3 +1,5 @@
+-- Analyse recorded lifestyle factors in relation to hospital outcomes.
+
 --Impact of alcohol history on hospital outcome
 SELECT 'Alcohol' AS risk_factor,
 		COUNT(*) AS total_patients,
