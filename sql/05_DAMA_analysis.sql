@@ -1,3 +1,5 @@
+--Analyse discharge against medical advice (DAMA) and the recorded reasons for DAMA.
+
 --Reasons for Discharge against medical advice (DAMA)
 SELECT "reason_for_DAMA",
 		COUNT(*) AS no_of_dama,
